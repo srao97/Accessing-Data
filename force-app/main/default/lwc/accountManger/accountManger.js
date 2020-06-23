@@ -39,7 +39,7 @@ export default class AccountManger extends LightningElement {
         }
         get retAccountPhone(){
             if(this.accountRecord.data){
-                return this.accountRecord.data.fields.Phone.value;
+                return this.accountRecord.data.c.Phone.value;
             }
             return undefined;
         }
